@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Dojo Survey Index</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='master.css') }}">
+</head>
+
+<body>
+    <div class="FormContainer">
+        <br> {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+        <p>{{message}}</p>
+        {% endfor %} {% endif %} {% endwith %}
+        <br>
+        <form id="DojoSurvey" action="/process" method="POST">
+            <div class="SurveyName">
+                <label for="Name">Your Name: </label>
+                <input type="text" name="Name" value="">
+            </div>
+            <div class="SurveyLocation">
+                <label for="dojos">Dojo you attend?</label>
+                <select class="Location" name="Dojos">
+                        <option value="Burkley">Burkley</option>
+                        <option value="Chicago">Chicago</option>
+                        <option value="Dallas">Dallas</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="Orange County">Orange County</option>
+                        <option value="Seattle" selected>Seattle</option>
+                        <option value="Silicon Valley">Silicon Valley</option>
+                        <option value="Tulsa">Tulsa</option>
+                        <option value="Washington D.C.">Washington D.C.</option>
+                    </select>
+            </div>
+            <div class="SurveyLanguage">
+                <label for="Language">Fav Language:</label>
+                <select class="Language" name="Language">
+                        <option value="C">C</option>
+                        <option value="C++">C++</option>
+                        <option value="C#">C#</option>
+                        <option value="Delphi">Delphi</option>
+                        <option value="Go">Go</option>
+                        <option value="Haskell">Haskell</option>
+                        <option value="Html">HTML</option>
+                        <option value="Java">Java</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Matlab">Matlab</option>
+                        <option value="Obj. C">Object C</option>
+                        <option value="Peal">Pearl</option>
+                        <option value="Python" selected>Python</option>
+                        <option value="PHP">PHP</option>
+                        <option value="R">R</option>
+                        <option value="Ruby">Ruby</option>
+                        <option value="Rust">Rust</option>
+                        <option value="Scala">Scala</option>
+                        <option value="SQL">SQL</option>
+                        <option value="Swift">Swift</option>
+                        <option value="TypeScript">TypeScript</option>
+                        <option value="VBA">VBA</option>
+                        <option value="Visual Basic">Visual Basic</option>
+                        <option value="XML">XML</option>
+                    </select>
+            </div>
+            <div class="SurveyComment">
+                <label for="Comment">Comment (Optional)</label>
+            </div>
+            <div class="SurveyComment">
+                <!-- <input type="text"  name="Comment" value=""> -->
+                <textarea name="Comment" rows="8" cols="80"></textarea>
+            </div>
+            <input class="SubmitButton" type="submit" value="Submit">
+            <input class="SubmitButton" type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+
+</html>

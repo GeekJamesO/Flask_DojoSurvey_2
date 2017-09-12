@@ -1,0 +1,52 @@
+body {
+    padding: 15px;
+}
+.FormContainer {
+    border: 2px solid black;
+}
+label {
+    display: inline-block;
+    min-width: 12%;
+}
+.Data {
+    display: inline-block;
+    vertical-align: top;
+}
+.column {
+    width: 45%;
+    vertical-align: top;
+}
+input {
+    border: 3px solid black;
+}
+select {
+    border: 3px solid black;
+}
+.SurveyName {
+    display: block;
+    padding: 4px 30px;
+}
+.SurveyLocation {
+    display: block;
+    padding: 4px 30px;
+}
+.SurveyLanguage {
+    display: block;
+    padding: 4px 30px;
+}
+.SurveyComment {
+    display: block;
+    padding: 4px 30px;
+}
+.SubmitButton {
+    display: block;
+    margin: 15px 15px 15px 400px;
+}
+.block {
+    display: block;
+}
+.BoundingBox {
+    padding: 5 20px;
+    margin: 5 20px;
+    border: 4px solid black;
+}

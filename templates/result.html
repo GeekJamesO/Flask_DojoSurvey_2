@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Dojo Survey Index</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <h1><u>Submitted Info</u></h1>
+    <label for="outName">Name</label>
+    <div id="outName" class="Data">{{ session['Name'] }}</div>
+
+    <label for="outLoca">Location</label>
+    <div id="outLoca" class="Data">{{ session['Location'] }}</div>
+
+    <label for="outLang">Language</label>
+    <div id="outLang" class="Data">{{ session['Language'] }}</div>
+
+    <label for="outComm">Comment</label>
+    <div id="outComm" class="Data">{{ session['Comment'] }}</div>
+</body>
+
+</html>
