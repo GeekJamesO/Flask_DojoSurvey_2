@@ -1,6 +1,11 @@
 body {
     padding: 15px;
 }
+.ErrorBox {
+    margin-left: 10%;
+    display: inline-block;
+    color: red;
+}
 .FormContainer {
     border: 2px solid black;
 }
